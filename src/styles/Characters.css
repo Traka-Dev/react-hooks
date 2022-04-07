@@ -6,8 +6,9 @@
 }
 
 .charCard{
-    width: 25%;
-    padding: 40px 15px;
+    width:16vw;
+    min-width: 300px;
+    padding: 40px 0;
     margin: 20px 15px;
     display: flex;
     flex-direction: column;
