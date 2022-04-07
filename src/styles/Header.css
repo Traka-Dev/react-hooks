@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header button{
+    margin: 10px;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #545658;
+    -webkit-border-radius: 50px;
+    border-radius: 5px;
+    background: #f1f4f8;
+    -webkit-box-shadow: 12px 12px 24px #cdcfd3, -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #cdcfd3, -12px -12px 24px #ffffff;
+}
