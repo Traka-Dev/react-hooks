@@ -30,14 +30,19 @@ export const Characters = () => {
     }, [])
 
     const handleFavClick = fav => {
-        dispatch(favorites, { type: 'ADD_TO_FAV', payload: fav })
+        if (favorites.favorites.length === 0) {
+            dispatch({ type: 'ADD_TO_FAV', payload: fav })
+        } else {
+            const found = favorites.favorites.find(item => item === fav)
+            !found && dispatch({ type: 'ADD_TO_FAV', payload: fav })
+        }
     }
 
     return (
         <div className="characters">
-            {favorites.favorites.map(fav => (
-                <li key={fav.id}>{fav.name} test</li>
-            ))}
+            {favorites.favorites.map(fav => {
+                return (<li key={fav.id}>{fav.name}</li>)
+            })}
             {characters.map(character => (
                 <div className="charCard" key={`char-${character.id}`}>
                     <img className="charImg" src={character.image} alt={character.name} />
