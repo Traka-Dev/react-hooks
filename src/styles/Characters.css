@@ -1,0 +1,26 @@
+
+.characters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.charCard{
+    width: 25%;
+    padding: 40px 15px;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    border-radius: 10px;
+    background: #f1f4f8;
+    -webkit-box-shadow: 12px 12px 24px #cdcfd3, -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #cdcfd3, -12px -12px 24px #ffffff;
+}
+
+.charImg{
+    width: 250px;
+    height: 250px;
+}
